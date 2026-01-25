@@ -1,0 +1,74 @@
+import java.util.Scanner;
+import java.util.Random;
+
+public class Calculator {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        Random r = new Random();
+
+        int choice;
+        int a, b;
+
+        do {
+            System.out.println("\nCalculator Main Menu");
+            System.out.println("1.) Addition");
+            System.out.println("2.) Subtraction");
+            System.out.println("3.) Multiplication");
+            System.out.println("4.) Division");
+            System.out.println("5.) Generate Random Number");
+            System.out.println("6.) Exit");
+            System.out.print("Enter Your Menu Choice: ");
+
+            choice = sc.nextInt();
+
+            switch (choice) {
+
+                case 1:
+                    System.out.print("Enter two numbers: ");
+                    a = sc.nextInt();
+                    b = sc.nextInt();
+                    System.out.println("Addition = " + (a + b));
+                    break;
+
+                case 2:
+                    System.out.print("Enter two numbers: ");
+                    a = sc.nextInt();
+                    b = sc.nextInt();
+                    System.out.println("Subtraction = " + (a - b));
+                    break;
+
+                case 3:
+                    System.out.print("Enter two numbers: ");
+                    a = sc.nextInt();
+                    b = sc.nextInt();
+                    System.out.println("Multiplication = " + (a * b));
+                    break;
+
+                case 4:
+                    System.out.print("Enter two numbers: ");
+                    a = sc.nextInt();
+                    b = sc.nextInt();
+                    if (b != 0)
+                        System.out.println("Division = " + (a / b));
+                    else
+                        System.out.println("Cannot divide by zero");
+                    break;
+
+                case 5:
+                    System.out.println("Random Number = " + r.nextInt(100));
+                    break;
+
+                case 6:
+                    System.out.println("Program Exit");
+                    break;
+
+                default:
+                    System.out.println("Invalid Choice");
+            }
+
+        } while (choice != 6);
+
+        sc.close();
+    }
+}
