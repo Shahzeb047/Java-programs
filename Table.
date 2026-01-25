@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Table{
+public static void main(String args[]){
+    Scanner s = new Scanner(System.in);
+   int num;
+    System.out.println("Enter a positive integer");
+      num=s.nextInt();
+    if(num>0){
+        System.out.println("Multiplication table of "+num);
+for(int i=1; i<=10; i++){
+    System.out.println(num+"*"+i +"=" +(num*i));
+
+}
+    }
+else{
+    System.out.println("-ve integers are not allowed");
+}
+    
+    s.close();
+}
+}
