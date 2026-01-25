@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+public class Operations{
+    public static void main(String args[]){
+Scanner s=new Scanner(System.in);
+int a,b;
+int result=0;
+int choice;
+
+System.out.println("Enter 1st number");
+ a= s.nextInt();
+System.out.println("Enter 2nd number");
+ b=s.nextInt();
+
+    do{
+        System.out.println("\n Choice an operations");
+        System.out.println("1.Addition");
+        System.out.println("2.Subtraction");
+        System.out.println("3.Multiplication");
+        System.out.println("Enter a choice");
+        choice=s.nextInt();
+     
+    
+    switch(choice){
+    case 1:
+        result = a+b;
+        System.out.println("Addition = " +result);
+        break;
+    case 2:
+        result = a-b;
+        System.out.println("Subrtaction =" +result);
+        break;
+    case 3:
+        result=a*b;
+        System.out.println("Multiplication ="+result);
+        break;
+    default:
+        System.out.println("Invailid choice! ");
+
+    }
+    }
+while(choice<1 || choice>3);
+    
+int fact = 1;
+for(int i=1; i <= result; i++){
+    fact = fact*i;
+}System.out.println("fact = "+fact);
+    s.close();
+    }
+}
