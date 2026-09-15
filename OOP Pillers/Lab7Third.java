@@ -12,7 +12,7 @@ class Rectangle{
     // Method to print area
     void printArea() {
         int area = length * breadth;
-        System.out.println("Area: " + area);
+        System.out.println("area: " + area);
     }
 
     // Method to print perimeter
