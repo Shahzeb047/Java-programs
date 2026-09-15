@@ -12,7 +12,7 @@ class Member {
 
     // Method to print salary
     void printSalary() {
-        System.out.println("Salary: " + Salary);
+        System.out.println("salary: " + Salary);
     }
 }
 
