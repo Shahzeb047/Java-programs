@@ -3,7 +3,7 @@ class Parent {
 
     // Method of Parent class
     void parentMethod() {
-        System.out.println("This is parent class");
+        System.out.println("This Is parent class");
     }
 }
 
