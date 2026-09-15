@@ -2,7 +2,7 @@
 class Music {
 
     void initialize() {
-        System.out.println("Music system initialized");
+        System.out.println("Music System initialized");
     }
 
     void play() {
