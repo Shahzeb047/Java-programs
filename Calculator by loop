@@ -22,8 +22,7 @@ public class Calculator {
 
             choice = sc.nextInt();
 
-            switch (choice) {
-
+            switch (choice){
                 case 1:
                     System.out.print("Enter two numbers: ");
                     a = sc.nextInt();
@@ -46,7 +45,7 @@ public class Calculator {
                     break;
 
                 case 4:
-                    System.out.print("Enter two numbers: ");
+                    System.out.print("Enter Two numbers: ");
                     a = sc.nextInt();
                     b = sc.nextInt();
                     if (b != 0)
