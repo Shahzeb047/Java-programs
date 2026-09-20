@@ -3,7 +3,8 @@ import java.util.Scanner;
 public class Operations{
     public static void main(String args[]){
 Scanner s=new Scanner(System.in);
-int a,b;
+int a;
+int b;
 int result=0;
 int choice;
 
